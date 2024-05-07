@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="sun"></div>
+      <div class="car"></div>
+      <div class="moving-car"></div>
+      <div class="cloud"></div>
+      <div class="cloud2"></div>
+      <div class="cloud3"></div>
+      <div class="cloud4"></div>
+      <div class="cloud5"></div>
+      <div class="stars"></div>
+      <div class="bg"></div>
+    </div>
+    <script>
+      let sun = document.querySelector(".sun");
+      let body = document.querySelector("body");
+      sun.onclick = function () {
+        body.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>

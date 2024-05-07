@@ -1,0 +1,212 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.scene
+{
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#a6d8ff 50%, #fff 90%, #fff 90%);
+}
+.dark .scene
+{
+    background: #222833;
+}
+.sun
+{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 2;
+}
+.dark .sun
+{
+    left: 65%;
+    box-shadow: 0 0 0 #fff;
+    z-index: 1;
+
+}
+.dark .sun::before
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background: #222833;
+    border-radius: 50%;
+
+}
+.bg
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 431px;
+    background: url(images/image5.png);
+    background-size: 768px;
+    background-repeat: repeat-x;
+    animation: animateBg 15s linear infinite;
+    z-index: 2;  
+}
+@keyframes animateBg {
+    0%
+    {
+        background-position: 0px;
+    }
+    100%
+    {
+        background-position: 768px;
+    }
+    
+}
+.dark .bg
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 431px;
+    background: url(images/image6.png);
+    background-size: 768px;
+    background-repeat: repeat-x;
+    animation: animateBg 15s linear infinite;
+    z-index: 2;  
+}
+@keyframes animateBg {
+    0%
+    {
+        background-position: 0px;
+    }
+    100%
+    {
+        background-position: 768px;
+    }
+    
+}
+.car {
+  position: absolute;
+  bottom: 10px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100px; 
+  height: 100px;
+  background-image: url(images/car.gif); 
+  background-size: cover;
+  z-index: 4;
+}
+.moving-car {
+  position: absolute;
+  bottom: 20px; 
+  left: 90%; 
+  width: 100px; 
+  height: 31px;
+  background-image: url(images/ferrari.gif);
+  background-size: cover;
+  animation: moveCar 9s linear infinite; 
+  z-index: 3;
+}
+
+@keyframes moveCar {
+  0% {
+      transform: translateX(900px); 
+  }
+  100% {
+      transform: translateX(calc(50px + -1900px));
+  }
+}
+
+.cloud {
+  position: absolute;
+  top: 50px; 
+  width: 200px; 
+  height: 164px;
+  background-image: url(images/cloud2.webp); 
+  background-size: 200px; 
+  animation: animateCloud 60s linear infinite;
+  z-index: 3; 
+}
+.cloud2 {
+  position: absolute;
+  top: 250px;
+  left: 45%; 
+  width: 200px; 
+  height: 164px;
+  background-image: url(images/cloud2.webp);
+  background-size: 200px; 
+  animation: animateCloud 40s linear infinite;
+  z-index: 3;  
+}
+.cloud3 {
+  position: absolute;
+  top: 150px;
+  left: 5%;
+  width: 200px; 
+  height: 164px;
+  background-image: url(images/cloud2.webp); 
+  background-size: 200px; 
+  animation: animateCloud 130s linear infinite;
+  z-index: 1;
+}
+.cloud4 {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(350%, -250%); 
+  width: 200px; 
+  height: 164px;
+  background-image: url(images/cloud2.webp); 
+  background-size: 200px; 
+  animation: animateCloud 100s linear infinite;
+  z-index: 3;
+}
+.cloud5 {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(450%, -160%); 
+  width: 200px;
+  height: 164px;
+  background-image: url(images/cloud2.webp); 
+  background-size: 200px; 
+  animation: animateCloud 150s linear infinite;
+  z-index: 1;
+}
+@keyframes animateCloud {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.dark .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/stars3.gif);
+  animation: animateStars 1000s linear infinite;
+  z-index: 0;
+}
+@keyframes animateStars {
+  0% {
+      background-position: 0 0;
+  }
+  0% {
+      background-position: 100% 100%;
+  }
+}
+
+  
