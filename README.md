@@ -20,7 +20,6 @@ This project is a demo of CSS animations to create an animated scene. Includes a
 This project can be deployed by simply opening the HTML file in a web browser. No additional steps are required for deployment.
 
 # Author
-This project is inspired by [@OnlineTutorialsYT](https://www.youtube.com/@OnlineTutorialsYT)
 
 This project was created by [@FelipeTresesenta](https://github.com/FelipeLopez360).
 
